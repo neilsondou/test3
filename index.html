@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中文政史文库</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #808080;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .quote {
+            font-style: italic;
+            margin: 40px 0;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #808080;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #808080;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #696969;
+            transform: translateY(-2px);
+        }
+
+        .qa {
+            margin: 40px 0;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .qa h3 {
+            margin-top: 20px;
+            color: #808080;
+        }
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #333;
+            padding: 10px;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .sidebar button {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #808080;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            border-radius: 5px;
+        }
+
+        .sidebar button:hover {
+            background-color: #696969;
+            transform: translateX(5px);
+        }
+
+        .status {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .status-item {
+            text-align: center;
+        }
+
+        .status-item h3 {
+            color: #808080;
+        }
+    </style>
+    <script src='https://unpkg.com/valine/dist/Valine.min.js'></script>
+</head>
+
+<body>
+    <div class="sidebar">
+        <button onclick="window.location.href='https://example.com'">站长个人网站</button>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>中文政史文库</h1>
+        </div>
+        <div class="quote">
+            <p>任何突破不在实验室而是在人脑中产生的学科——尤其是社会科学中的诸多门类，反而比其他学科更需要通过实证方法来研究，而必须的此类学科思维、学术研究的方法、方法论正是在足够的阅读量中产生的，以足够的文献阅读量为基础，才能去进行进一步的量化、质化研究。——老窦
+            </p>
+            <p>Disciplines where breakthroughs are not generated in laboratories but in the human mind—especially
+                numerous categories within the social sciences—actually require empirical methods even more than other
+                fields. The necessary thought processes, academic research methods, and methodologies for these
+                disciplines are born out of sufficient reading. Only with a solid foundation of extensive literature
+                reading can one proceed to further quantitative and qualitative research. —Neilson dou</p>
+        </div>
+        <div class="buttons">
+            <button class="button" onclick="window.location.href='https://mega.nz'">Mega下载链接</button>
+            <button class="button" disabled>谷歌网盘共享链接</button>
+            <button class="button" disabled>OneDrive共享链接</button>
+            <button class="button" disabled>NAS下载</button>
+        </div>
+        <div class="qa">
+            <h3>Q 这个文库建立的目的是什么？</h3>
+            <p>A 为了自由地传播知识，践行自由知识与人文精神。</p>
+            <h3>Q 自由知识的精神与人文精神分别是什么？</h3>
+            <p>A 自由知识的精神来源于GNU的自由软件精神，这里所谓的自由知识是指人们能够自由学习、诠释、应用的知识，它亦可因人们需要而再重新诠释，并基于社群利益而互相分享（源自Open Knowledge Open
+                Definition Group）
+                人文精神指悉尼·胡克所作的《捍卫自由社会的教育》中的文段所表达的对人文学科研究的愿景：研究人文学科，能够培育对伟大且往往陌生的生活愿景和模式的理解与欣赏。在任何一种生活模式中，人文学科呈现出“人类内心自我冲突的问题”（威廉·福克纳）因此，人文学科涵盖了政治和意识形态的维度，但又超越了这些维度。它们不寻求共识，没有旗帜或信仰，即使它们在颂扬那些在战争呐喊中战斗过的生活与死亡方式。
+                人文学科将我们带出自我，使我们能够用他人的眼睛和心灵看世界，同时也使我们意识到他人对我们内心的影响。无论如何定义人文学科并限定其课程范围，其培养都会永久性地丰富心灵的内在景观，不论在任何趋势或社会阶层下。因为它们不断提供新的喜悦、安慰、洞察，有时甚至成为了希望的源泉。
+            </p>
+            <h3>Q 这个文库中的文档是“合规“的吗</h3>
+            <p>A 我本人不对这个文库中包含的任何文档及其合法、合规负责，这个文库旨在分享任何有关政治学、历史学与其他学科的知识，这代表着它要尽可能地包含更多的相关内容，如果其中任何文档出现了任何相悖与任何地方法律、产生了版权纠纷一类的情况，请联系我删除之。该站点并未在中国大陆地区备案，故其并不是为中国大陆地区用户服务而开放的。任何中国大陆用户如果能够访问该网站，这种情况并不是出于我本人想要向大陆地区传播任何非法出版物的动机，而应当是给该站提供云服务的厂商所致（Cloudflare、Github、MEGA等）
+            </p>
+            <h3>Q 这个文库中的文档来源</h3>
+            <p>A 文库中的大部分文档来源于：Cambridge Core期刊数据库、原豆豆文库、zlib、国家哲学社会科学文献中心、原语悦文库、原种子书城、原中文自由主义书库、Resilio
+                Sync分享资源、文化书城等，您也可以提交自己的文库来合并到本文库中。</p>
+        </div>
+        <div class="status">
+            <div class="status-item">
+                <h3>文件数量</h3>
+                <p>12,237</p>
+            </div>
+            <div class="status-item">
+                <h3>文库大小</h3>
+                <p>152.7 GB</p>
+            </div>
+            <div class="status-item">
+                <h3>总访问量</h3>
+                <p>187020</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="button" disabled>文件列表页</button>
+        </div>
+        <div id="vcomments"></div>
+        <script>
+            new Valine({
+                el: '#vcomments',
+                appId: 'D3fsiiYIxKKwtBYcSxJk4BfR-gzGzoHsz',
+                appKey: 'lmLhdLOSgyWI9fpchm88hUSC',
+                serverURLs: "https://d3fsiiyi.lc-cn-n1-shared.com",
+                emojiCDN: 'http://i0.hdslb.com/bfs/emote/',
+                // 表情title和图片映射
+                emojiMaps: {
+                    "tv_doge": "6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png",
+                    "tv_亲亲": "a8111ad55953ef5e3be3327ef94eb4a39d535d06.png",
+                    "tv_偷笑": "bb690d4107620f1c15cff29509db529a73aee261.png",
+                    "tv_再见": "180129b8ea851044ce71caf55cc8ce44bd4a4fc8.png",
+                    "tv_冷漠": "b9cbc755c2b3ee43be07ca13de84e5b699a3f101.png",
+                    "tv_发怒": "34ba3cd204d5b05fec70ce08fa9fa0dd612409ff.png",
+                    "tv_发财": "34db290afd2963723c6eb3c4560667db7253a21a.png",
+                    "tv_可爱": "9e55fd9b500ac4b96613539f1ce2f9499e314ed9.png",
+                    "tv_吐血": "09dd16a7aa59b77baa1155d47484409624470c77.png",
+                    "tv_呆": "fe1179ebaa191569b0d31cecafe7a2cd1c951c9d.png",
+                    "tv_呕吐": "9f996894a39e282ccf5e66856af49483f81870f3.png",
+                    "tv_困": "241ee304e44c0af029adceb294399391e4737ef2.png",
+                    "tv_坏笑": "1f0b87f731a671079842116e0991c91c2c88645a.png",
+                    "tv_大佬": "093c1e2c490161aca397afc45573c877cdead616.png",
+                    "tv_大哭": "23269aeb35f99daee28dda129676f6e9ea87934f.png",
+                    "tv_委屈": "d04dba7b5465779e9755d2ab6f0a897b9b33bb77.png",
+                    "tv_害羞": "a37683fb5642fa3ddfc7f4e5525fd13e42a2bdb1.png",
+                    "tv_尴尬": "7cfa62dafc59798a3d3fb262d421eeeff166cfa4.png",
+                    "tv_微笑": "70dc5c7b56f93eb61bddba11e28fb1d18fddcd4c.png",
+                    "tv_思考": "90cf159733e558137ed20aa04d09964436f618a1.png",
+                    "tv_惊吓": "0d15c7e2ee58e935adc6a7193ee042388adc22af.png",
+                }
+            })
+        </script>
+    </div>
+</body>
+
+</html>
