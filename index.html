@@ -120,6 +120,10 @@
         .status-item h3 {
             color: #808080;
         }
+
+        .hidden {
+            display: none;
+        }
     </style>
     <script src='https://unpkg.com/valine/dist/Valine.min.js'></script>
 </head>
@@ -213,6 +217,22 @@
                     "tv_惊吓": "0d15c7e2ee58e935adc6a7193ee042388adc22af.png",
                 }
             })
+        </script>
+        <script>
+            window.onload = function () {
+                const elements = document.querySelectorAll('.vtime');
+                elements.forEach(element => {
+                    element.remove();
+                });
+            };
+        </script>
+        <script>
+            window.onload = function () {
+                const elements = document.querySelectorAll('.vsys');
+                elements.forEach(element => {
+                    element.remove();
+                });
+            };
         </script>
     </div>
 </body>
